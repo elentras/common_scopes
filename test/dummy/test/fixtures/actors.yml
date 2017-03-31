@@ -1,0 +1,16 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Adam Sandler
+  position: 1
+  birthdate: 1980-09-22
+
+two:
+  name: Johnny Depp
+  position: 50
+  birthdate: 1978-09-22
+
+three:
+  name: Will Smith
+  position: 100
+  birthdate: 1982-09-22
