@@ -1,8 +1,19 @@
 # CommonScopes
-Short description and motivation.
+
+This gem will generate defaults scopes based on ActiveRecord's model and it's attributes types.
 
 ## Usage
-How to use my plugin.
+```ruby
+class Actor < ActiveRecord::Base
+  include CommonScopes
+end
+
+actors = Actor.
+  by_created_at_greater('2017-01-01').
+  by_name_start('Jeremy').
+  by_age_greater(30).
+  by_age_lesser(40)
+```
 
 ## Installation
 Add this line to your application's Gemfile:
@@ -22,7 +33,7 @@ $ gem install common_scopes
 ```
 
 ## Contributing
-Contribution directions go here.
+Any help would be appreciated ! Simple for and make a PR with your code !
 
 ## License
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
